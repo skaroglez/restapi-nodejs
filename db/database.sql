@@ -38,5 +38,11 @@ BEGIN
 			WHERE id = _id;
 	END IF;
 	SELECT _id AS id;
-END
+END;
 
+CREATE table students(
+	id INT(11) NOT NULL auto_increment,
+	name varchar(45) DEFAULT NULL,
+	dateAdmission DATE DEFAULT NULL,
+	primary key(id)
+);
